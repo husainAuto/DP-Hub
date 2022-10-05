@@ -15,6 +15,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import BrowserSetup.Base;
 
 import pages.LoginOrSignUpPage;
@@ -27,9 +31,15 @@ public class TestNg2 extends Base {
 	private MessengerPage messengerPage;
 	private RoomsPage roomsPage;
 	private LoginOrSignUpPage loginOrSignUpPage;
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
 	@Parameters ("browser")
 	@BeforeTest
 	public void launchBrowser(String browserName) {
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
+		
 		if (browserName.equals("Chrome"))
 		{
 			driver = openChromeBrowser();
