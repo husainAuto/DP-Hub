@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -71,7 +72,7 @@ public class TestNg1 extends Base {
 	public void verifyMessenger() throws IOException {
 	TestID = 101;
 	roomsPage.goBackToMessenger();
-	Utility.captureScreenShot(driver, TestID);
+	//Utility.captureScreenShot(driver, TestID);
 	String url = driver.getCurrentUrl();
 	String title = driver.getTitle();
 	Assert.assertEquals(url, "https://www.messenger.com/");
@@ -80,16 +81,18 @@ public class TestNg1 extends Base {
 	}
 	@Test (priority = 2)
 	public void verifyHelpCenter() {
+	TestID = 102;
 	roomsPage.contactToHelpCenter();
 	String url = driver.getCurrentUrl();
 	String title = driver.getTitle();
 	SoftAssert soft = new SoftAssert(); 
-	soft.assertEquals(url, "https://www.messenger.com/help");
-	soft.assertEquals(title, "Messenger Help Centre");
+	soft.assertEquals(url, "https://www.messenger.com/hel");
+	soft.assertEquals(title, "Messenger Help Centr");
 	soft.assertAll();
 	}
-	@Test (priority = 3)  //For Suite Practice
+	@Test (dependsOnMethods = {"verifyHelpCenter"})  //For Suite Practice
 	public void verifyHelpCenter1() {
+	TestID = 103;
 	roomsPage.contactToHelpCenter();
 	String url = driver.getCurrentUrl();
 	String title = driver.getTitle();
@@ -99,7 +102,11 @@ public class TestNg1 extends Base {
 	soft.assertAll();
 	}
 	@AfterMethod
-	public void logOut() {
+	public void logOut(ITestResult result) throws IOException {
+		if (ITestResult.FAILURE == result.getStatus())
+		{
+			Utility.captureScreenShot(driver, TestID);
+		}
 	System.out.println("LogOut");
 	}
 	@AfterClass

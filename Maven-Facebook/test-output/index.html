@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SuiteFB" class="navigator-link">
-              <span class="suite-name border-passed">SuiteFB</span>
+              <span class="suite-name border-failed">SuiteFB</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">12 methods, 2 failed,  2 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteFB" class="hide-methods failed suite-SuiteFB"> (hide)</a> <!-- hide-methods failed suite-SuiteFB -->
+                      <a href="#" panel-name="suite-SuiteFB" class="show-methods failed suite-SuiteFB"> (show)</a> <!-- show-methods failed suite-SuiteFB -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteFB">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyHelpCenter">verifyHelpCenter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyHelpCenter">verifyHelpCenter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteFB -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SuiteFB" class="hide-methods skipped suite-SuiteFB"> (hide)</a> <!-- hide-methods skipped suite-SuiteFB -->
+                      <a href="#" panel-name="suite-SuiteFB" class="show-methods skipped suite-SuiteFB"> (show)</a> <!-- show-methods skipped suite-SuiteFB -->
+                    </span>
+                    <div class="method-list-content skipped suite-SuiteFB">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyHelpCenter1">verifyHelpCenter1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyHelpCenter1">verifyHelpCenter1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SuiteFB -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +142,7 @@
                     <div class="method-list-content passed suite-SuiteFB">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyHelpCenter">verifyHelpCenter</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SuiteFB" title="test.TestNg2" class="method navigator-link" hash-for-method="verifyHelpCenter">verifyHelpCenter</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyHelpCenter">verifyHelpCenter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,27 +157,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyHelpCenter1">verifyHelpCenter1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SuiteFB" title="test.TestNg2" class="method navigator-link" hash-for-method="verifyHelpCenter1">verifyHelpCenter1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyHelpCenter1">verifyHelpCenter1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg2" class="method navigator-link" hash-for-method="verifyMessenger">verifyMessenger</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SuiteFB" title="test.TestNg1" class="method navigator-link" hash-for-method="verifyMessenger">verifyMessenger</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteFB" title="test.TestNg2" class="method navigator-link" hash-for-method="verifyMessenger">verifyMessenger</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -174,6 +192,72 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SuiteFB" class="panel SuiteFB">
+          <div class="suite-SuiteFB-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.TestNg1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHelpCenter">
+                  </a> <!-- verifyHelpCenter -->
+                  <span class="method-name">verifyHelpCenter</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://www.messenger.com/hel] but found [https://www.messenger.com/help],
+	expected [Messenger Help Centr] but found [Messenger Help Centre]
+	at test.TestNg1.verifyHelpCenter(TestNg1.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHelpCenter">
+                  </a> <!-- verifyHelpCenter -->
+                  <span class="method-name">verifyHelpCenter</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://www.messenger.com/hel] but found [https://www.messenger.com/help],
+	expected [Messenger Help Centr] but found [Messenger Help Centre]
+	at test.TestNg1.verifyHelpCenter(TestNg1.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteFB-class-failed -->
+          <div class="suite-SuiteFB-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.TestNg1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHelpCenter1">
+                  </a> <!-- verifyHelpCenter1 -->
+                  <span class="method-name">verifyHelpCenter1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestNg1.verifyHelpCenter1()[pri:0, instance:test.TestNg1@72d1ad2e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHelpCenter1">
+                  </a> <!-- verifyHelpCenter1 -->
+                  <span class="method-name">verifyHelpCenter1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestNg1.verifyHelpCenter1()[pri:0, instance:test.TestNg1@5c6648b0] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteFB-class-skipped -->
           <div class="suite-SuiteFB-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -232,34 +316,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyHelpCenter">
-                  </a> <!-- verifyHelpCenter -->
-                  <span class="method-name">verifyHelpCenter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHelpCenter">
-                  </a> <!-- verifyHelpCenter -->
-                  <span class="method-name">verifyHelpCenter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHelpCenter1">
-                  </a> <!-- verifyHelpCenter1 -->
-                  <span class="method-name">verifyHelpCenter1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHelpCenter1">
-                  </a> <!-- verifyHelpCenter1 -->
-                  <span class="method-name">verifyHelpCenter1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyMessenger">
                   </a> <!-- verifyMessenger -->
                   <span class="method-name">verifyMessenger</span>
@@ -283,18 +339,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;SuiteFB&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;SuiteFB&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;extendReport.ExtentTestNGIReporterListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;ChromeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.TestNg2&quot;/&gt;
       &lt;class name=&quot;test.TestNg1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;EdgeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;EdgeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.TestNg2&quot;/&gt;
@@ -343,58 +399,58 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyMessenger')
+data.setCell(0, 1, 'verifyHelpCenter')
 data.setCell(0, 2, 'test.TestNg1')
-data.setCell(0, 3, 19570);
+data.setCell(0, 3, 10294);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyHelpCenter')
-data.setCell(1, 2, 'test.TestNg1')
-data.setCell(1, 3, 8888);
+data.setCell(1, 1, 'verifyMessenger')
+data.setCell(1, 2, 'test.TestNg2')
+data.setCell(1, 3, 10170);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyHelpCenter')
-data.setCell(2, 2, 'test.TestNg2')
-data.setCell(2, 3, 8832);
+data.setCell(2, 1, 'verifyMessenger')
+data.setCell(2, 2, 'test.TestNg1')
+data.setCell(2, 3, 7433);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyMessenger')
-data.setCell(3, 2, 'test.TestNg2')
-data.setCell(3, 3, 7685);
+data.setCell(3, 2, 'test.TestNg1')
+data.setCell(3, 3, 4889);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyMessenger')
-data.setCell(4, 2, 'test.TestNg1')
-data.setCell(4, 3, 4172);
+data.setCell(4, 2, 'test.TestNg2')
+data.setCell(4, 3, 4431);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyHelpCenter')
 data.setCell(5, 2, 'test.TestNg2')
-data.setCell(5, 3, 3049);
+data.setCell(5, 3, 4277);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyMessenger')
+data.setCell(6, 1, 'verifyHelpCenter1')
 data.setCell(6, 2, 'test.TestNg2')
-data.setCell(6, 3, 2844);
+data.setCell(6, 3, 3938);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyHelpCenter1')
-data.setCell(7, 2, 'test.TestNg1')
-data.setCell(7, 3, 2331);
+data.setCell(7, 1, 'verifyHelpCenter')
+data.setCell(7, 2, 'test.TestNg2')
+data.setCell(7, 3, 2974);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyHelpCenter')
-data.setCell(8, 2, 'test.TestNg1')
-data.setCell(8, 3, 2190);
+data.setCell(8, 1, 'verifyHelpCenter1')
+data.setCell(8, 2, 'test.TestNg2')
+data.setCell(8, 3, 1707);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyHelpCenter1')
-data.setCell(9, 2, 'test.TestNg2')
-data.setCell(9, 3, 1915);
+data.setCell(9, 1, 'verifyHelpCenter')
+data.setCell(9, 2, 'test.TestNg1')
+data.setCell(9, 3, 1650);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifyHelpCenter1')
 data.setCell(10, 2, 'test.TestNg1')
-data.setCell(10, 3, 1662);
+data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verifyHelpCenter1')
-data.setCell(11, 2, 'test.TestNg2')
-data.setCell(11, 3, 1502);
+data.setCell(11, 2, 'test.TestNg1')
+data.setCell(11, 3, 0);
 window.suiteTableData['SuiteFB']= { tableData: data, tableDiv: 'times-div-SuiteFB'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-SuiteFB">
               </div> <!-- times-div-SuiteFB -->
             </div> <!-- times-div -->
@@ -430,285 +486,213 @@ return data;
               <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Chrome)</span>
-                <span class="method-start">22582 ms</span>
+                <span class="method-start">5044 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">POMClassObjects</span>
+                <span class="method-start">7910 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomsPage</span>
+                <span class="method-start">7977 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMessenger</span>
+                <span class="method-start">25309 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">35812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomsPage</span>
+                <span class="method-start">35959 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHelpCenter</span>
+                <span class="method-start">57472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">61751 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomsPage</span>
+                <span class="method-start">61754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHelpCenter1</span>
+                <span class="method-start">76509 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">80449 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">80451 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">39652 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">POMClassObjects</span>
-                <span class="method-start">39652 ms</span>
+                <span class="method-start">80452 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomsPage</span>
-                <span class="method-start">40520 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openRoomsPage</span>
-                <span class="method-start">40520 ms</span>
+                <span class="method-start">80454 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMessenger</span>
-                <span class="method-start">73245 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyMessenger</span>
-                <span class="method-start">73247 ms</span>
+                <span class="method-start">98053 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">80937 ms</span>
+                <span class="method-name">logOut([TestResult name=verifyMessenger status=SUCCESS method=TestNg1.verifyMessenger()[pri:1, instance:tes...)</span>
+                <span class="method-start">105488 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomsPage</span>
-                <span class="method-start">81143 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">92817 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openRoomsPage</span>
-                <span class="method-start">92819 ms</span>
+                <span class="method-start">105492 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyHelpCenter</span>
-                <span class="method-start">110871 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyHelpCenter</span>
-                <span class="method-start">110883 ms</span>
+                <span class="method-start">124417 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">119717 ms</span>
+                <span class="method-name">logOut([TestResult name=verifyHelpCenter status=FAILURE method=TestNg1.verifyHelpCenter()[pri:2, instance:t...)</span>
+                <span class="method-start">134780 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openRoomsPage</span>
-                <span class="method-start">119718 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">119763 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openRoomsPage</span>
-                <span class="method-start">119768 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyHelpCenter1</span>
-                <span class="method-start">133496 ms</span>
+                <span class="method-start">140565 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyHelpCenter1</span>
-                <span class="method-start">133963 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">135413 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">135418 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">136296 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">removePOMObjects</span>
-                <span class="method-start">136297 ms</span>
+                <span class="method-start">140574 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">136301 ms</span>
+                <span class="method-start">140579 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">coseBrowser</span>
-                <span class="method-start">170610 ms</span>
+                <span class="method-start">156924 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Edge)</span>
-                <span class="method-start">181518 ms</span>
+                <span class="method-start">166803 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Edge)</span>
-                <span class="method-start">208314 ms</span>
+                <span class="method-start">184530 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">POMClassObjects</span>
-                <span class="method-start">215899 ms</span>
+                <span class="method-start">192936 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomsPage</span>
-                <span class="method-start">215902 ms</span>
+                <span class="method-start">192937 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMessenger</span>
+                <span class="method-start">210738 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">215172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomsPage</span>
+                <span class="method-start">215178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHelpCenter</span>
+                <span class="method-start">224167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">227143 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomsPage</span>
+                <span class="method-start">227144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHelpCenter1</span>
+                <span class="method-start">234670 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">236380 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">236381 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">215905 ms</span>
+                <span class="method-start">236382 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomsPage</span>
-                <span class="method-start">215908 ms</span>
+                <span class="method-start">236384 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMessenger</span>
-                <span class="method-start">242559 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyMessenger</span>
-                <span class="method-start">243601 ms</span>
+                <span class="method-start">252606 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">246446 ms</span>
+                <span class="method-name">logOut([TestResult name=verifyMessenger status=SUCCESS method=TestNg1.verifyMessenger()[pri:1, instance:tes...)</span>
+                <span class="method-start">257496 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomsPage</span>
-                <span class="method-start">246447 ms</span>
+                <span class="method-start">257497 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">246732 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openRoomsPage</span>
-                <span class="method-start">246733 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyHelpCenter</span>
-                <span class="method-start">255361 ms</span>
+                <span class="method-start">265521 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyHelpCenter</span>
-                <span class="method-start">256297 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">258411 ms</span>
+                <span class="method-name">logOut([TestResult name=verifyHelpCenter status=FAILURE method=TestNg1.verifyHelpCenter()[pri:2, instance:t...)</span>
+                <span class="method-start">267173 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openRoomsPage</span>
-                <span class="method-start">258412 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">258488 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openRoomsPage</span>
-                <span class="method-start">258490 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyHelpCenter1</span>
-                <span class="method-start">268714 ms</span>
+                <span class="method-start">267773 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyHelpCenter1</span>
-                <span class="method-start">268917 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">270219 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">270220 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TestNg1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">270581 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">removePOMObjects</span>
-                <span class="method-start">270582 ms</span>
+                <span class="method-start">267778 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">270583 ms</span>
+                <span class="method-start">267779 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestNg2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">coseBrowser</span>
-                <span class="method-start">280635 ms</span>
+                <span class="method-start">277424 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
